@@ -1,0 +1,11 @@
+# Server specific files
+node_modules/
+dist/
+*.log
+
+# Environment variables
+.env
+
+
+# REST API
+API_TEST.rest
