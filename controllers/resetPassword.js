@@ -18,7 +18,7 @@ const sendPasswordResetEmail = async (req, res) => {
       expiresIn: "1h",
     });
 
-    const resetLink = `http://localhost:3000/reset-password?token=${resetToken}`;
+    const resetLink = `https://sthealthmanagement.onrender.com/reset-password?token=${resetToken}`;
 
     await sendResetPasswordEmail(email, resetLink); // Send reset password email using Postmark
 

@@ -22,7 +22,6 @@ const classEnrollmentRoutes = require("./routes/users/classEnrollmentRouter.js")
 const clinicVisitRoutes = require("./routes/users/clinicVisitRouter.js");
 const viewLogRoutes = require("./routes/viewLogRouter.js");
 
-
 const resetPasswordRoutes = require("./routes/resetPasswordRoutes.js");
 const otpRoutes = require("./routes/otpRoutes.js");
 const cors = require("cors");
@@ -39,7 +38,7 @@ app.use(
 app.use(express.json({ limit: "50mb" }));
 
 const corsOptions = {
-  origin: "http://localhost:3000", // Replace with your frontend's URL
+  origin: "https://sthealthmanagement.onrender.com", // Replace with your frontend's URL
   credentials: true, // This is important for cookies
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: ["Content-Type", "Authorization"],
